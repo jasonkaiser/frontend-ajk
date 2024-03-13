@@ -1,0 +1,93 @@
+
+.global{
+    margin-left: 400px;
+    margin-right: 460px;
+
+}
+.header-container{
+    display: flex;
+
+}
+.left-side{
+  
+    width: 750px;
+    height: 300px;
+    background-color: #f6c1a4;
+ 
+    
+}
+.right-side{
+    width: 120px;
+    height: 300px;
+    background-color: bisque;
+}
+
+
+#main-text{
+    color: black;
+    position: absolute;
+    left: 330pt;
+    top: 140px;
+    font-size:70pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+.paragraph{
+    text-align: left;
+    font-size: 17pt;
+}
+.images-container{
+    background-color: #f5f5eb;
+    height: 360px;
+}
+.images{
+    padding-top: 20pt;
+    padding-left: 20pt;
+    padding-right: 20pt;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.image-text{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    font-size: 15pt;
+}
+
+.footer-container{
+    margin-top: 60;
+    background-color: #f6c1a4;
+    height: 155pt;
+
+
+}
+
+
+
+.text{
+    padding-top: 20;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.headertext{
+    display: flex;
+    margin-top: 30;
+    margin-left: 30;
+
+}
+
+#logo1,#logo2{
+    
+    margin-top: 25;
+    margin-left: 10;
+    font-size: 20;
+    font-weight: bold;
+}
