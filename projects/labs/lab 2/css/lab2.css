@@ -1,0 +1,54 @@
+body{
+    background-color: #85AFD4;
+}
+p, table, h1, h3, .forgotpassword{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+h1, h2, h3{ 
+    font-weight: bold;
+    color: white;
+}
+button{
+    background-color: #E47272;
+    color: white;
+    border-radius: 20%;
+    }
+a{
+    font-weight: bold;
+}
+.register-titlediv{
+    text-align: center;
+}
+.register-container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.home-title{
+    text-align: center;
+}
+.home-container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+.home-maincontent, .jason{
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+}
+
+.login{
+    text-align: center; 
+    padding-top: 10px;
+    color: white;
+}
