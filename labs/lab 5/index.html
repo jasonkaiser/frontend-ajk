@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sort a HTML Table Alphabetically</title>
+<style>
+
+#modal {
+    display: none;
+    position: absolute;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.head{
+    color:grey
+
+}
+.profile{
+    width:20px;
+    height: 20px;
+    border-radius: 20px;
+    
+}
+
+.hover:hover{
+    background-color: bisque;
+}
+</style>
+</head>
+<body>
+
+<table id="myTable">
+  <tr class="head">
+  
+    <th onclick="sortTable(0)">ID</th>
+    <th onclick="sortTable(1)">NAME</th>
+    <th onclick="sortTable(2)">COUNTRY</th>
+    <th onclick="sortTable(3)">EMAIL</th>
+    <th>Action</th>
+ 
+  </tr>
+  <tr class="hover">
+    <td>1</td>
+    <td><img class="profile" src="/projects/project 1/images/background.png"> Jason</td>
+    <td>Bosnia</td>
+    <td>2131232@gmail.com</td>
+    <td><button onclick="showModal()">Click</button>
+    <div id="modal">YOu clicked on Jason</div></td>
+    
+  </tr>
+  <tr class="hover">
+    <td>2</td>
+    <td><img class="profile" src="/projects/project 1/images/background.png">  ALexander</td>
+    <td>Serbia</td>
+    <td>7131232@gmail.com</td>
+    <td>Click</td>
+  </tr>  <tr class="hover">
+    <td>3</td>
+    <td><img class="profile" src="/projects/project 1/images/background.png">  Kaiser</td>
+    <td>Croatia</td>
+    <td>zs1232@gmail.com</td>
+    <td>Click</td>
+  </tr>
+
+</table>
+
+<script>
+
+function showModal() {
+    document.getElementById('modal').style.display = "block";
+}
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+
+  dir = "asc"; 
+
+  while (switching) {
+
+    switching = false;
+    rows = table.rows;
+
+    for (i = 1; i < (rows.length - 1); i++) {
+
+      shouldSwitch = false;
+
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+
+      switchcount ++;      
+    } else {
+
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>

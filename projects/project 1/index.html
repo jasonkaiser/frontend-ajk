@@ -1,95 +1,345 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-
     <meta charset="UTF-8">
-    <meta http-equiv="X-A-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width ,inital-scale=1.0">
-    
-       
-    <title>Focus Design - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Kaiser - Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<body>
-
-    <header class="header">
-        <a href="#" class="logo">FOCUS</a>
-
-        <nav class="navbar">
-            <a href class ="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-
-    <section class="home">
-        <div class="home-content">
-            <h1>Hi, I'm Jason Kaiser</h1>
-            <h3>Graphic / UI Designer</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                 It has survived not only five centuries, but also the leap into electronic typesetting, 
-                 remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset.
-            </p>
-            <div class="btn-box">
-                <a href="#">Hire Me</a>
-                <a href="#">Let's Talk</a>
-            </div>
-         
-        </div>
-
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-        </div>
-    </section>
-
-    <section class="about">
-        <div class="about-content">
-            <h1>About me</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                 It has survived not only five centuries, but also the leap into electronic typesetting, 
-                 remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset.
-
-            <div class="progress-container">
-                <div class="progress-bar-1" style="color: white; padding: 3px;">Photoshop</div>
-                <div class="progress" style="background-color: #081b29; height: 20px; border-radius: 25pt;">
-                    <div class="progress-bar" role="progressbar" style="width: 95%; font-size: 20px; font-weight: bold; color:#081b29; background-color:  #00abf0;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" ></div>
-                </div>
-                <div class="progress-bar-2" style="color: white; padding: 3px;">Figma</div>
-                <div class="progress" style="background-color: #081b29; height: 20px; border-radius: 25pt;">
-                    <div class="progress-bar" role="progressbar" style="width: 85%; font-size: 20px; font-weight: bold; color:#081b29; background-color:  #00abf0;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" ></div>
-                </div>
-                <div class="progress-bar-3" style="color: white; padding: 3px;">Illustrator</div>
-                <div class="progress" style="background-color: #081b29; height: 20px; border-radius: 25pt;">
-                    <div class="progress-bar" role="progressbar" style="width: 70%; font-size: 20px; font-weight: bold; color:#081b29; background-color:  #00abf0;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" ></div>
-                </div>
-            
-            </div>
-        </div>
-    </section>
-
-    <section class="portfolio" style="background-color:#081b29;">
-        <div class="portfolio-container">
-            <div class="portfolio-content">
-                <div class="portfolio-box1"></div>
-                <div class="portfolio-box2"></div>
-                <div class="portfolio-box3"></div>
-                <div class="portfolio-box4"></div>
-                <div class="portfolio-box5"></div>
-                <div class="portfolio-box6"></div>
-            </div>
-        </div>
-    </section>
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/aos.css">
+    <link rel="stylesheet" href="/assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+          <a class="navbar-brand mb-lg-4" href="#">
+            <span class="h3 fw-bold d-block d-lg-none ">Jason Kaiser</span>
+            <img src="/assets/images/person.jpg" class="d-none d-lg-block mx-lg-auto" style="border-radius: 60px;">
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#services">Services</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#work">Work</a>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+              </li>
+
+              </li>
+           
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- Content Wrap -->
+    <div id="content-wrapper">
+
+        <!-- Home Section -->
+        <section id="home" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">I'M A <span class="text-brand">GRAPHIC DESIGNER</span> FROM SARAJEVO</h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am Jason Kaiser. Let's create something together.</p>
+                        <div data-aos="fade-up" data-aos-delay="600"><a href="#work" class="btn btn-brand me-3">Check My Work</a>
+                        <A href="#" class="link-custom">E-Mail:  jasonkaiser126@gmail.com </A></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="full-height px-lg-5" >
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">SERVICES</h6>
+                        <h1>Services That I Provide</h1>
+                    </div>
+
+                </div>
+
+                <div class="row gy-4">
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-feather"></i>
+                            </div>
+                                <h5 class="mt-4 mb-2">Branding</h5>
+                                <p>Let's craft a captivating visual identity together that truly embodies your brand's essence and values. 
+                                    From logos to color schemes and typography, we'll ensure every detail reflects your unique story. 
+                                    Consistency across all touchpoints will not only foster recognition but also build lasting connections 
+                                    with your audience in today's competitive market.</p>
+                                <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="lab la-figma"></i>
+                            </div>
+                                <h5 class="mt-4 mb-2">UI Design</h5>
+                                <p>Imagine digital interfaces so intuitive and visually appealing that users can't help but engage. 
+                                    Together, we'll design seamless experiences that prioritize usability, accessibility, and aesthetic 
+                                    appeal. By collaborating closely with UX designers and developers, we'll bring your vision to life
+                                    and ensure your digital presence leaves a lasting impact.</p>
+                                <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-bullhorn"></i>
+                            </div>
+                                <h5 class="mt-4 mb-2">Marketing Design</h5>
+                                <p>Picture this: visually compelling materials that not only catch the eye but also speak
+                                    directly to your audience's hearts. Whether it's ads, social media graphics, or promotional
+                                    materials, we'll create designs that drive action and leave a lasting impression.Eye catching design
+                                    for your audience. 
+                                    Let's make your brand stand out and thrive in the crowded digital 
+                                    landscape.</p>
+                                <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Work Section-->
+        <section id="work" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">WORK</h6>
+                        <h1>My Recent Projects</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4" >
+                                <img class="rounded-4" src="/assets/images/project-1.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Website Design</h4>
+                                <p>An unique rocket design site for brand Community Kickstarter</p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4" >
+                                <img class="rounded-4" src="/assets/images/project-2.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Logo Design</h4>
+                                <p>Eye-catching rocket logo design for brand Community Kickstarter</p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4" >
+                                <img class="rounded-4" src="/assets/images/project-3.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>UI Design</h4>
+                                <p>User Interface design for a Game Title: "GTA 5" Server Project </p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4" >
+                                <img class="rounded-4" src="/assets/images/project-4.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Marketing Design</h4>
+                                <p>Various Flyer / Cover Designs for Live Events / Music Releases..</p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- About Section-->
+        <section id="about" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">ABOUT</h6>
+                        <h1>My Education & Experience</h1>
+                    </div>
+                
+                    <div class="row gy-5">
+                        <div class="col-lg-6">
+                            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h4>
+                            <div class="row gy-4">
+
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="bg-base p-4 rounded-4 shadow">
+                                        <h4>Mechanical engineering for Computers</h5>
+                                        <p class="text-brand mb-2">2019-2023 </p>
+                                        <p class="mb-0">
+                                            Back in my alma mater, our mechanical engineering program had a fascinating twist – it was infused with elements of 
+                                            computer science. Imagine diving deep into the world of robotics and automation while also mastering computer-aided design. 
+                                            It was an exhilarating blend of traditional engineering principles and cutting-edge computational technologies, preparing us 
+                                            for the ever-evolving landscape of modern industry. </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="bg-base p-4 rounded-4 shadow">
+                                        <h4>IT Academy</h5>
+                                        <p class="text-brand mb-2">2022-2023 </p>
+                                        <p class="mb-0">
+                                            Back at my IT Academy, Python was more than just a programming language; it was the backbone of our education. 
+                                            We delved into Python's versatility, from web development to data analysis and beyond. With hands-on projects and 
+                                            immersive coursework, we honed our skills in problem-solving and software development, preparing us for the dynamic 
+                                            challenges of the tech industry. </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="bg-base p-4 rounded-4 shadow">
+                                        <h4>Interational Burch University ( IT ) </h5>
+                                        <p class="text-brand mb-2">2024 - Currently</p>
+                                        <p class="mb-0">
+                                            At Burch University in Sarajevo, our IT programming curriculum goes beyond the basics – it's a comprehensive dive into the 
+                                            world of software development. From mastering fundamental concepts to exploring advanced techniques, we're immersed in the 
+                                            dynamic realm of coding. Through hands-on projects and collaborative learning, we're sharpening our problem-solving skills 
+                                            and preparing ourselves for the challenges and opportunities of the tech industry.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experience</h4>
+                            <div class="row gy-4">
+
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="bg-base p-4 rounded-4 shadow">
+                                        <h4>Local Community</h5>
+                                        <p class="text-brand mb-2">2020-2021</p>
+                                        <p class="mb-0">
+                                            In our local community, I've had the privilege of applying my design skills to make a tangible impact. 
+                                            From creating visually captivating posters for events to crafting engaging social media graphics, I've 
+                                            been actively involved in various design projects. Collaborating with local organizations and businesses,
+                                             I've used design as a tool to communicate messages effectively and enhance community engagement. It's been a 
+                                             fulfilling journey, using creativity to contribute positively to the vibrancy of our local scene.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="bg-base p-4 rounded-4 shadow">
+                                        <h4>Freelancing</h5>
+                                        <p class="text-brand mb-2">2021 - 2024 </p>
+                                        <p class="mb-0">
+                                            Through freelancing, I've crafted designs for clients worldwide, 
+                                            spanning industries and projects. From logos to websites, each collaboration tailors my work to meet 
+                                            clients' unique goals, resonating with their audiences. This global experience blends passion and professionalism, 
+                                            delivering impactful designs across borders.
+                                            </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="bg-base p-4 rounded-4 shadow">
+                                        <h4>Agencies</h5>
+                                        <p class="text-brand mb-2">2024 - Currently</p>
+                                        <p class="mb-0">
+                                            Working with agencies, I've gained invaluable design experience across diverse projects and sectors. 
+                                            From visual identities to digital interfaces, I've contributed to innovative solutions alongside talented teams. 
+                                            These experiences have refined my skills and broadened my perspective, enriching my professional journey significantly.
+                                             </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section id="contact" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8 pb-4" data-aos="fade-up">
+                        <h6 class="text-brand">CONTACT ME</h6>
+                        <h1>Interested in Working Together? Lets Talk!</h1>
+                    </div>
+                    
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+                        <form action="#" class="row g-lg-3 gy-3">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Enter Your name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Enter Your email">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" placeholder="Enter subject">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <textarea name="" rows="4" class="form-control" placeholder="Enter your message"></textarea>
+                            </div>
+                            <div class="form-group col-md-12 d-grid">
+                               <button type="submit" class="btn btn-brand">Contact Me</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">@kajzer_jason</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-icons">
+                            <a href="#"><i class="lab la-twitter"></i></a>
+                            <a href="#"><i class="lab la-instagram"></i></a>
+                            <a href="#"><i class="lab la-github"></i></a>
+                            <a href="#"><i class="lab la-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/aos.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
