@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/image-gallery.css">
 
 </head>
 
@@ -116,10 +117,11 @@
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
                         <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item active" href="blank.html">Blank Page</a>
+                        <a class="collapse-item active" href="blank.html">Image Gallery</a>
                     </div>
                 </div>
             </li>
+
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
@@ -360,12 +362,56 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+                    <h1 class="h3 mb-4 text-gray-800" style="text-align: center;">Image Gallery</h1>
 
                 </div>
                 <!-- /.container-fluid -->
 
-            </div>
+                
+            <section class="gallery min-vh-100">
+                <div class="container-lg">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                        <div class="col">
+                            <img src="img/gallery/1.png" class="gallery-item">
+                        </div>
+                        <div class="col">
+                            <img src="img/gallery/2.png" class="gallery-item">
+                        </div>
+                        <div class="col">
+                            <img src="img/gallery/3.png" class="gallery-item">
+                        </div>
+                        <div class="col">
+                            <img src="img/gallery/4.png" class="gallery-item">
+                        </div>
+                        <div class="col">
+                            <img src="img/gallery/5.png" class="gallery-item">
+                        </div>
+                        <div class="col">
+                            <img src="img/gallery/6.png" class="gallery-item">
+                        </div>
+                     
+                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                       
+                                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">CLOSE</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/gallery/1.png" class="modal-img" alt="">
+                                        </div>
+                
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+            </section>
+
+        </div>
+
+            
             <!-- End of Main Content -->
 
             <!-- Footer -->
@@ -418,6 +464,8 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/image-gallery.js"></script>
+
 
 </body>
 

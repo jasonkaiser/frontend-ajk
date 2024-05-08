@@ -1,0 +1,31 @@
+.gallery-item{
+
+}
+.gallery{
+    padding: 80px 0;
+
+}
+
+img{
+    max-width: 100%;
+
+}
+
+.gallery img{
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0, 0.3);
+    width: 80%;
+
+}
+
+.modal-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-close{
+    border:none;
+    font-weight: 350;
+}
