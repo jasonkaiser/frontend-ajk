@@ -379,29 +379,44 @@
 
                     <div class="accordion">
                         <div class="accordion-item">
-                          <div class="accordion-title">FAQs</div>
-                          <div class="accordion-content">
-                            <p>Question 1: Text?</p>
-                            <p>Answer 1: Text.</p>
-                            <p>Question 2: Text?</p>
-                            <p>Answer 2: Text.</p>
-                          </div>
+                            <button class="accordion-header">Question 1</button>
+                            <div class="accordion-content">
+                                <p>This is the answer to question 1.</p>
+                                <a href="page1.html" class="view-more">View more</a>
+                            </div>
                         </div>
                         <div class="accordion-item">
-                          <div class="accordion-title">FAQs 2</div>
-                          <div class="accordion-content">
-                            <ul>
-                              <li>Test</li>
-                              <li>Test</li>
-                              <li>Test</li>
-                            </ul>
-                          </div>
+                            <button class="accordion-header">Question 2</button>
+                            <div class="accordion-content">
+                                <p>This is the answer to question 2.</p>
+                                <a href="page2.html" class="view-more">View more</a>
+                            </div>
                         </div>
-                      </div>
+                        <!-- Add more accordion items as needed -->
+                    </div>
 
                 </div>
                 <div id="toast"></div>
                 <button onclick="showToast('Success')" class="notification">Notification</button>
+
+
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <form id="contactForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div id="responseMessage"></div>
+                </div>
+            
          
                 <!-- /.container-fluid -->
 
@@ -417,14 +432,7 @@
             <!-- End of Footer -->
 
         </div>
-        <!-- End of Content Wrapper -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
+      
     </div>
     <!-- End of Page Wrapper -->
 
@@ -464,6 +472,7 @@
     <script src="js/sb-admin-2.min.js"></script>
     <script src="js/image-gallery.js"></script>
     <script src="js/other-page.js"></script>
+    <script src="js/form-contact.js"></script>
     <script
     type="module"
     src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js"

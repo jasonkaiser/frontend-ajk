@@ -1,22 +1,24 @@
 
+document.addEventListener("DOMContentLoaded", function () {
+  const accordionHeaders = document.querySelectorAll(".accordion-header");
 
-document.addEventListener('DOMContentLoaded', function() {
-    const accordionItems = document.querySelectorAll('.accordion-item');
-  
-    accordionItems.forEach(item => {
-      const title = item.querySelector('.accordion-title');
-  
-      title.addEventListener('click', () => {
-        item.classList.toggle('active');
-        const content = item.querySelector('.accordion-content');
-        if (content.style.display === 'block') {
-          content.style.display = 'none';
-        } else {
-          content.style.display = 'block';
-        }
+  accordionHeaders.forEach(header => {
+      header.addEventListener("click", function () {
+          const content = this.nextElementSibling;
+          const isOpen = content.style.display === "block";
+
+          // Close all accordion content
+          document.querySelectorAll(".accordion-content").forEach(content => {
+              content.style.display = "none";
+          });
+
+          // Toggle the current accordion content
+          if (!isOpen) {
+              content.style.display = "block";
+          }
       });
-    });
   });
+});
 
 
   function showToast(message) {

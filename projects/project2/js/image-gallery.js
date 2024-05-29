@@ -1,3 +1,5 @@
+
+
 document.addEventListener("click", function(e){
     if(e.target.classList.contains("gallery-item")){
         const src = e.target.getAttribute("src");
@@ -34,3 +36,48 @@ function hideShow(){
 
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const postsContainer = document.getElementById('posts');
+
+    // Function to fetch and display posts
+    function fetchPosts() {
+        fetch('data/posts.json')
+            .then(response => response.json())
+            .then(posts => {
+                posts.forEach(post => {
+                    const postElement = document.createElement('div');
+                    postElement.classList.add('post');
+                    postElement.innerHTML = `
+                        <h2>${post.title}</h2>
+                        <p>${post.content}</p>
+                        <div class="comments" id="comments-${post.id}"></div>
+                    `;
+                    postsContainer.appendChild(postElement);
+                    fetchComments(post.id);
+                });
+            })
+            .catch(error => console.error('Error fetching posts:', error));
+    }
+
+    // Function to fetch and display comments for a post
+    function fetchComments(postId) {
+        fetch('data/comments.json')
+            .then(response => response.json())
+            .then(comments => {
+                const commentsContainer = document.getElementById(`comments-${postId}`);
+                comments.filter(comment => comment.postId === postId).forEach(comment => {
+                    const commentElement = document.createElement('p');
+                    commentElement.textContent = `${comment.author}: ${comment.comment}`;
+                    commentsContainer.appendChild(commentElement);
+                });
+            })
+            .catch(error => console.error('Error fetching comments:', error));
+    }
+
+    // Fetch and display posts on page load
+    fetchPosts();
+});
+
+

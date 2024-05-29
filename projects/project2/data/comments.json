@@ -1,0 +1,17 @@
+[
+    {
+        "postId": 1,
+        "author": "Jason Kaiser",
+        "comment": "Great Design!"
+    },
+    {
+        "postId": 1,
+        "author": "Alexander Kaiser",
+        "comment": "Very good."
+    },
+    {
+        "postId": 2,
+        "author": "Jason Alexander",
+        "comment": "Thanks for sharing."
+    }
+]

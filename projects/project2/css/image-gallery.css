@@ -18,11 +18,23 @@ img{
     width: 80%;
 
 }
+.modal-header {
+    margin: auto;
+    
+}
+.modal-content{
+    top: 220px;
+    right: 10%;
+    width: 400px;
+    position: absolute;
+    margin: auto;
+}
 
 .modal-body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .btn-close{
@@ -100,3 +112,34 @@ input:checked + .slider:before {
     opacity: 0;
     transition: 1s;
   }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.post h2 {
+    margin: 0 0 10px;
+}
+
+.post p {
+    margin: 0 0 5px;
+}
+
