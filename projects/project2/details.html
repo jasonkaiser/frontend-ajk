@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Blank</title>
+    <title>SB Admin 2 - 404</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,15 +17,9 @@
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/image-gallery.css">
     <link rel="stylesheet" href="css/other-page.css">
-    <link rel="stylesheet" href="css/to-do-list.css">
 
 </head>
 
@@ -52,7 +46,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Dashboard</span>
+                </a>
             </li>
 
             <!-- Divider -->
@@ -122,13 +117,13 @@
                         <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Image Gallery</a>
-                        <a class="collapse-item active" href="blank2.html">Other</a>
+                        <a class="collapse-item " href="weather.html">Weather</a>
+                        <a class="collapse-item" href="image-gallery.html">Image Gallery</a>
+                        <a class="collapse-item" href="other.html">Other</a>
+                        <a class="collapse-item" href="todolist.html">To Do List</a>
                     </div>
                 </div>
             </li>
-
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
@@ -159,7 +154,7 @@
         <div id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
-
+            <div id="content">
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -182,7 +177,7 @@
                             </div>
                         </div>
                     </form>
-                    
+
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
@@ -192,8 +187,6 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-search fa-fw"></i>
                             </a>
-
-                        
                             <!-- Dropdown - Messages -->
                             <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
                                 aria-labelledby="searchDropdown">
@@ -334,7 +327,7 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 150px;">
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
@@ -369,35 +362,22 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    
-                    <script type="module">
-                        import { createNightowl } from '@bufferhead/nightowl'
-                    
-                        createNightowl({
-                            defaultMode: 'dark',
-                            toggleButtonMode: 'newState'
-                        })
-                    </script>
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800" style="text-align: center;">Other</h1>
 
-                    <main class="app">
-                        <h1></h1>
-                        <div class="input-header">
-                          <h1><span id="date"></span></h1>
-                          <div class="to-do-input">
-                            <input type="text" id="item" placeholder="Enter a task..."><button id="enter">Enter</button>
-                          </div>
-                        </div>
-                        <div class="to-do-list"></div>
-                    </main>
+                    <h1 style="text-align: center;">Details...</h1>
+                 
 
-   
+                </div>
+                <!-- /.container-fluid -->
 
+            </div>
+            <!-- End of Main Content -->
+
+        
         </div>
+        <!-- End of Content Wrapper -->
 
-
+    </div>
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
@@ -424,7 +404,7 @@
             </div>
         </div>
     </div>
-  </script>
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -434,16 +414,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-    <script src="js/image-gallery.js"></script>
-    <script src="js/other-page.js"></script>
-    <script src="js/to-do-list.js"></script>
-    <script
-    type="module"
-    src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js"
-></script>
-
-  
-
+    <script src="js/weather.js"></script>
 
 </body>
 

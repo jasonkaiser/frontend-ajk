@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - 404</title>
+    <title>SB Admin 2 - Blank</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/image-gallery.css">
 
 </head>
 
@@ -45,8 +46,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span>
-                </a>
+                    <span>Dashboard</span></a>
             </li>
 
             <!-- Divider -->
@@ -116,11 +116,14 @@
                         <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item active" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                        <a class="collapse-item" href="weather.html">Weather</a>
+                        <a class="collapse-item active" href="image-gallery.html">Image Gallery</a>
+                        <a class="collapse-item" href="other.html">Other</a>
+                        <a class="collapse-item" href="todolist.html">To Do List</a>
                     </div>
                 </div>
             </li>
+
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
@@ -151,7 +154,7 @@
         <div id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
-            <div id="content">
+
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -174,7 +177,7 @@
                             </div>
                         </div>
                     </form>
-
+                    
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
@@ -184,6 +187,8 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-search fa-fw"></i>
                             </a>
+
+                        
                             <!-- Dropdown - Messages -->
                             <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
                                 aria-labelledby="searchDropdown">
@@ -324,7 +329,7 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 150px;">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
@@ -359,34 +364,87 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    
+                    <script type="module">
+                        import { createNightowl } from '@bufferhead/nightowl'
+                    
+                        createNightowl({
+                            defaultMode: 'dark',
+                            toggleButtonMode: 'newState'
+                        })
+                    </script>
 
-                    <!-- 404 Error Text -->
-                    <div class="text-center">
-                        <div class="error mx-auto" data-text="404">404</div>
-                        <p class="lead text-gray-800 mb-5">Page Not Found</p>
-                        <p class="text-gray-500 mb-0">It looks like you found a glitch in the matrix...</p>
-                        <a href="index.html">&larr; Back to Dashboard</a>
-                    </div>
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800" style="text-align: center;">Image Gallery</h1>
 
                 </div>
                 <!-- /.container-fluid -->
 
-            </div>
+            
+
+            <button onclick="hideShow()" id="button-gallery" class="gallery-button">Hide Gallery</button>   
+            <section id="gallery-button" class="gallery min-vh-100">
+                <div class="container-lg">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                        <div class="col">
+                            <img src="img/gallery/1.png" class="gallery-item">
+                        </div>
+                        <div class="col">
+                            <img src="img/gallery/2.png" class="gallery-item">
+                        </div>
+                        <div class="col">
+                            <img src="img/gallery/3.png" class="gallery-item">
+                        </div>
+                        <div class="col">
+                            <img src="img/gallery/4.png" class="gallery-item">
+                        </div>
+                        <div class="col">
+                            <img src="img/gallery/5.png" class="gallery-item">
+                        </div>
+                        <div class="col">
+                            <img src="img/gallery/6.png" class="gallery-item">
+                        </div>
+                     
+                </div>
+
+                <div class="container">
+                    <h1 style="color:black;">Image Reviews</h1>
+                    <div id="posts"></div>
+                </div>
+
+             
+
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                       
+                                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">CLOSE</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/gallery/1.png" class="modal-img" alt="">
+                                        </div>
+                
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+            </section>
+
+        </div>
+
+            
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
+
             <!-- End of Footer -->
 
         </div>
         <!-- End of Content Wrapper -->
-
+       
     </div>
     <!-- End of Page Wrapper -->
 
@@ -423,7 +481,15 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
+
     <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/image-gallery.js"></script>
+    <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js"
+></script>
+  
+
 
 </body>
 
